@@ -1,0 +1,16 @@
+/* pages/search/search.wxss */
+.input_info{
+  
+  padding-left: 50rpx;
+  width: 80%;
+  height: 200rpx;
+  border: 1px solid #9AFF9A;
+  border-radius: 30rpx;
+}
+.input_root{
+  display: flex;
+ justify-content: center;
+  width: 100%;
+  height: 100%;
+ 
+}

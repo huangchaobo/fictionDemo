@@ -1,0 +1,20 @@
+<!--pages/search/search.wxml-->
+<view class='input_root'>
+  <input class='input_info'  confirm-type ="search" maxlength="10" placeholder="请输入小说名称" bindconfirm="toSearch"/>
+  </view>
+<!--列表  -->
+<block wx:for="{{book_list}}">
+<navigator url='/pages/detail/detail?bid={{item.bid}}' open-type='navigate'>
+  <view class="list_item">
+    <image class='list_image' src='{{item.cover}}'></image>
+    <!--文字  -->
+    <view class='list_text'>
+      <text class='list_des'>{{item.tags}}</text>
+      <view class='list_auterinfo'>
+        <text class='list_bookname'>书名：{{item.title}}</text>
+        <text class='list_booktype'>作者：{{item.author}}</text>
+      </view>
+    </view>
+  </view>
+  </navigator>
+</block>

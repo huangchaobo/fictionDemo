@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "热门小说",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#00CD00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "热门小说",
+        "iconPath":"pages/pic/homeD.png",
+        "selectedIconPath":"pages/pic/homeS.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "pages/pic/searchD.png",
+        "selectedIconPath": "pages/pic/searchS.png"
+      }
+    ]
+  }
+}

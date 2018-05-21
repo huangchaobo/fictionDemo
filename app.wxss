@@ -1,0 +1,50 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.list_image {
+  height: 200rpx;
+  width: 200rpx;
+  display: block;
+  margin-right: 30rpx;
+  float: left;
+}
+
+.list_text {
+  height: 200rpx;
+}
+
+.list_des {
+  height: 150rpx;
+  display: block;
+}
+
+.list_auterinfo {
+  display: flex;
+}
+
+.list_booktype {
+  color: #808080;
+  font-size: 30rpx;
+  float: right;
+  flex: 1;
+}
+
+.list_item {
+  margin: 30rpx;
+}
+
+.list_bookname {
+  flex: 1;
+  color: #808080;
+  font-size: 30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

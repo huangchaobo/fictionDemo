@@ -1,0 +1,10 @@
+<!--pages/detail/detail.wxml-->
+<!-- <rich-text nodes="{{html}}"></rich-text>  -->
+<!-- <view>{{html}}</view>  -->
+<import src="../wxParse/wxParse.wxml" />
+
+<view class="wxParse">
+
+  <template is="wxParse" data="{{wxParseData:html.nodes}}" />
+
+</view>

@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<!--轮播图  -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{hotInfo}}">
+    <swiper-item>
+      <image class="swiper-item" src="{{item.book_cover}}" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<!--列表  -->
+<block wx:for="{{hotInfo}}">
+<navigator url='/pages/detail/detail?bid={{item.bid}}' open-type='navigate'>
+  <view class="list_item">
+    <image class='list_image' src='{{item.book_cover}}'></image>
+    <!--文字  -->
+    <view class='list_text'>
+      <text class='list_des'>{{item.topic}}</text>
+      <view class='list_auterinfo'>
+        <text class='list_bookname'>书名：{{item.bookname}}</text>
+        <text class='list_booktype'>类型：{{item.class_name}}</text>
+      </view>
+    </view>
+  </view>
+  </navigator>
+</block>
